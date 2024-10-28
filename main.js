@@ -14,3 +14,33 @@ function toggleDetail(e) {
 
   detail.slideToggle();
 }
+
+function onFormSubmit(e) {
+  e.preventDefault();
+  const email = $("#email");
+  const fullName = $("#fullname");
+  const phone = $("#phone");
+
+  console.log($(email).val());
+  console.log($(fullName).val());
+  console.log($(phone).val());
+
+  if (email.val() == "") {
+    alert("Email harus di isi!");
+  } else if (fullName.val() == "") {
+    alert("Fullname harus di isi!");
+  } else if (phone.val() == "") {
+    alert("Phone harus di isi!");
+  } else {
+    alert("Submit terkirim!");
+  }
+
+  // if(email.val)
+}
+
+$(document).ready(function () {
+  $(".nav-link").click(function () {
+    $(".nav-link").removeClass("active");
+    $(this).addClass("active");
+  });
+});

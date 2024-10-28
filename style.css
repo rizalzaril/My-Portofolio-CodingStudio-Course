@@ -9,6 +9,11 @@ body {
   color: black;
 }
 
+.active {
+  color: black;
+  font-weight: 700;
+}
+
 section {
   padding-top: 128px;
   position: relative;
@@ -50,6 +55,10 @@ section::before {
   width: 50px;
 }
 
+.home .home-img {
+  width: 100%;
+}
+
 /* arrow animate */
 
 #arrow {
@@ -86,12 +95,12 @@ section::before {
   display: none;
 }
 
+.work p {
+  text-align: justify;
+}
+
 .work::before {
   content: "Work";
-  font-size: 72px;
-  font-weight: 700;
-  position: absolute;
-  color: gray;
 }
 
 .work-img {
@@ -143,4 +152,26 @@ section::before {
 }
 #work3:hover::after {
   content: "Mobile Dev";
+}
+
+.contact::before {
+  content: "Contact";
+}
+
+.contact p {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .home .home-img {
+    width: 70%;
+  }
+  section::before {
+    font-size: 38px;
+  }
+}
+@media (max-width: 500px) {
+  .home .home-img {
+    width: 50%;
+  }
 }

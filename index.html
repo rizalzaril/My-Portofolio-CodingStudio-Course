@@ -52,7 +52,9 @@
 
     <!-- HOME SECTION -->
     <section id="home" class="container home">
-      <div class="row d-flex align-items-center">
+      <div
+        class="row d-flex align-items-center flex-md-row flex-column-reverse"
+      >
         <div class="col-md-8">
           <h3 class="fw-semibold">Hi, I am</h3>
           <h1 class="fw-bold">Rizal Liyan Syah</h1>
@@ -60,7 +62,7 @@
           <a class="btn" href="./images/potrait.png" download="">Resume</a>
         </div>
         <div class="col-md-4">
-          <img src="./images/potrait.png" alt="portrait" />
+          <img class="home-img" src="./images/potrait.png" alt="portrait" />
         </div>
       </div>
 
@@ -72,7 +74,7 @@
     <!-- END HOME SECTION -->
 
     <!-- ABOUT SECTION -->
-    <section class="about container" id="about">
+    <section class="about container mt-5" id="about">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia
         doloremque quibusdam dolores laudantium nostrum, iste asperiores numquam
@@ -130,8 +132,10 @@
     <!-- END ABOUT SECTION -->
 
     <!-- WORK SECTION-->
-    <section id="work" class="work container">
-      <div class="row d-flex align-items-center gap-5">
+    <section id="work" class="work container mt-5">
+      <div
+        class="row d-flex align-items-center gap-5 flex-md-row flex-column-reverse"
+      >
         <div class="col">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -156,7 +160,73 @@
     <!-- END WORK SECTION-->
 
     <!-- CONTACT SECTION -->
+    <section class="contact container mt-5" id="contact">
+      <div class="row gap-5 mb-5">
+        <div class="col-12 col-lg-6">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+            repudiandae laudantium veritatis quaerat. Tempora obcaecati quos eos
+            quasi atque iste. Magnam, repudiandae natus consequuntur ad magni
+            soluta odit at! Molestiae incidunt iure vitae sunt distinctio neque
+            dolor tempore quis maxime consequuntur animi, modi dignissimos
+            cupiditate quod? Non est atque officia.
+          </p>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="row g-3 align-items-center">
+            <form onsubmit="onFormSubmit(event)">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Full name</label>
+                <input
+                  type="text"
+                  placeholder="Jhon Doe"
+                  class="form-control"
+                  id="fullname"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="+6283874243930"
+                  id="phone"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+
+              <button type="submit" class="btn d-flex align-items-center">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- END CONTACT SECTION -->
+
+    <section></section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
